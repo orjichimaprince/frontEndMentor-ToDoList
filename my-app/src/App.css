@@ -1,0 +1,101 @@
+.App {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(235, 21%, 11%);
+}
+
+.inputer {
+  background-color: hsl(235, 21%, 11%);
+}
+
+body {
+  background-color: hsl(235, 21%, 11%);
+}
+
+.imageonediv {
+  width: 100%;
+}
+
+.imageone {
+  width: 100%;
+  position: relative;
+}
+
+h2 {
+  color: white;
+  position: absolute;
+  margin-top: -43%;
+  margin-left: 7%;
+}
+
+.sunimage {
+  position: absolute;
+  margin-top: -43%;
+  right: 5%;
+}
+
+.inputcomponenet {
+  position: absolute;
+  margin-top: -100px;
+  left: 30px;
+  height: 20px;
+}
+
+.inputLast {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.buttondiv {
+  background-color: hsl(235, 24%, 19%);
+  /* background-color: red; */
+  width: 85%;
+  margin-left: 8%;
+  height: 43px;
+  margin-top: 5%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* @media screen {
+    
+} */
+
+@media only screen and (min-width: 600px) {
+  /* .imageonediv {
+   
+    } */
+  .imageone {
+    width: 100%;
+    position: relative;
+    height: 20em;
+  }
+  h2 {
+    color: white;
+    position: absolute;
+    margin-top: -19%;
+    margin-left: 29%;
+  }
+  .sunimage {
+    position: absolute;
+    margin-top: -19%;
+    margin-right: 300px;
+  }
+  .buttondiv {
+    background-color: hsl(235, 24%, 19%);
+    width: 50%;
+    margin-right: 18.5em;
+    height: 43px;
+    margin-top: 5%;
+  }
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+}
