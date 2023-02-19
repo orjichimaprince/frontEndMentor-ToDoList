@@ -29,14 +29,9 @@ const Form = ({ id, text, setTodos, todo, todos, completed }) => {
                 src="/images/icon-check.svg"
                 alt="imagecheck"
                 onClick={() => completeHandler(id)}
+                onSubmit={() => completeHandler(id)}
               />
             </div>
-            {/* <input
-              type="text"
-              className="textinput"
-              text={text}
-              // onChange={inputTextHandler}
-            /> */}
             <div className={`todolistdiv ${completed ? "completed" : ""}`}>
               {text}
             </div>
@@ -45,6 +40,7 @@ const Form = ({ id, text, setTodos, todo, todos, completed }) => {
               alt="iconcross"
               className="iconcross"
               onClick={() => deleteHandler(id)}
+              onSubmit={() => deleteHandler(id)}
             />
           </label>
         </div>

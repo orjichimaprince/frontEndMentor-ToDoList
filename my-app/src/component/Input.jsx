@@ -22,6 +22,7 @@ function Input({ setInputText, setTodos, todos, inputText }) {
           alt="imagecheck"
           className="circleimage"
           onClick={submitHandler}
+          onSubmit={submitHandler}
         ></img>
       </div>
       <input type="text" onChange={inputTextHandler} value={inputText} />

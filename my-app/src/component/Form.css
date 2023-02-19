@@ -1,96 +1,95 @@
 form {
-    display: flex;
-    width: 100%;
-    border: 0.1px solid rgba(0, 0, 0, 0.05);
-    background-color: hsl(235, 24%, 19%);
+  display: flex;
+  width: 100%;
+  border: 0.1px solid rgba(0, 0, 0, 0.05);
+  background-color: hsl(235, 24%, 19%);
 }
 
 .wrapper {
-    width: 90%;
-    margin-right: auto;
-    color: white;
-    justify-content: center;
+  width: 90%;
+  margin-right: auto;
+  color: white;
+  justify-content: center;
 }
 
 .iconcross {
-    display: inline-flex;
-    background-color: hsl(235, 24%, 19%);
-    color: hsl(233, 14%, 35%);
-    background-color: hsl(235, 24%, 19%);
+  display: inline-flex;
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(233, 14%, 35%);
+  background-color: hsl(235, 24%, 19%);
 }
 
 .circle {
-    width: 30px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: hsl(235, 24%, 19%);
-    border: 0.5px solid hsl(234, 11%, 52%);
-    margin-left: 7px;
+  width: 30px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: hsl(235, 24%, 19%);
+  border: 0.5px solid hsl(234, 11%, 52%);
+  margin-left: 7px;
 }
 
 label {
+  display: inline-flex;
+  border: 1px solid hsl(240, 15%, 25%);
+  width: 100%;
+  align-items: start;
+  border-radius: 7px;
+  background-color: hsl(235, 24%, 19%);
+  margin-right: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 23em;
+  height: 43px;
+  background-color: hsl(235, 24%, 19%);
+  border: 0.5px solid transparent;
+  color: white;
+}
+
+.todolistdiv {
+  width: 30em;
+  height: 43px;
+  background-color: hsl(235, 24%, 19%);
+  border: 2px solid transparent;
+  color: white;
+  text-align: center;
+  justify-self: center;
+}
+
+@media only screen and (min-width: 600px) {
+  form {
+    display: flex;
+    /* swidth: 100%; */
+    border: 0.1px solid rgba(0, 0, 0, 0.05);
+    background-color: hsl(235, 24%, 19%);
+  }
+  .wrapper {
+    width: 50%;
+    margin-right: auto;
+    color: white;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: hsl(235, 24%, 19%);
+    border: 0.5px solid hsl(234, 11%, 52%);
+    margin-right: 50px;
+  }
+  label {
     display: inline-flex;
     border: 1px solid hsl(240, 15%, 25%);
     width: 100%;
     align-items: start;
     border-radius: 7px;
     background-color: hsl(235, 24%, 19%);
-    margin-right: 5em;
+    margin-right: 2em;
     justify-content: center;
     align-items: center;
-}
-
-input[type="text"] {
-    width: 23em;
-    height: 43px;
-    background-color: hsl(235, 24%, 19%);
-    border: 0.5px solid transparent;
-    color: white;
-}
-
-.todolistdiv {
-    width: 30em;
-    height: 43px;
-    background-color: hsl(235, 24%, 19%);
-    border: 2px solid transparent;
-    color: white;
-    text-align: center;
-    justify-self: center;
-}
-
-@media only screen and (min-width: 600px) {
-    form {
-        display: flex;
-        /* swidth: 100%; */
-        border: 0.1px solid rgba(0, 0, 0, 0.05);
-        background-color: hsl(235, 24%, 19%);
-    }
-    .wrapper {
-        width: 50%;
-        margin-right: auto;
-        color: white;
-        justify-content: center;
-        border: 2px solid green;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .circle {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: hsl(235, 24%, 19%);
-        border: 0.5px solid hsl(234, 11%, 52%);
-        margin-right: 50px;
-    }
-    label {
-        display: inline-flex;
-        border: 1px solid hsl(240, 15%, 25%);
-        width: 100%;
-        align-items: start;
-        border-radius: 7px;
-        background-color: hsl(235, 24%, 19%);
-        margin-right: 2em;
-        justify-content: center;
-        align-items: center;
-    }
+  }
 }

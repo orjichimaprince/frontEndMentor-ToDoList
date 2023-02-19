@@ -118,10 +118,6 @@ function App() {
           filteredTodos={filteredTodos}
           setFilteredTodos={setFilteredTodos}
         />
-
-        {/* <Form /> */}
-
-        {/* {inputText} */}
       </div>
 
       <div class="buttondiv">
