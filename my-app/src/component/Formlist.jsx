@@ -9,17 +9,19 @@ const Formlist = ({ todos, setTodos, filteredTodos, setFilteredTodos }) => {
       <div className="formListclass">
         <ul>
           {/* {Object.values(todos).map((todo) => ( */}
-          {filteredTodos.sort().map((todo) => (
-            <Form
-              key={todo.id}
-              text={todo.text}
-              todos={todos}
-              todo={todos}
-              setTodos={setTodos}
-              id={todo.id}
-              completed={todo.completed}
-            />
-          ))}
+          {filteredTodos
+            .sort((a, b) => b.id - a.id)
+            .map((todo) => (
+              <Form
+                key={todo.id}
+                text={todo.text}
+                todos={todos}
+                todo={todos}
+                setTodos={setTodos}
+                id={todo.id}
+                completed={todo.completed}
+              />
+            ))}
           {/* {Object.keys(todos).map((todo) => (
             <Form Key={todo.id} todos={todos} />
           ))} */}
